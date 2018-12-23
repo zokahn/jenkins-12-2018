@@ -7,6 +7,10 @@ pipeline {
                 sh '''
                     echo "Multiline shell steps works too"
                     ls -lah
+                    uname -a
+                    hostname
+                    date
+                    ping -c 3 www.xs4all.nl
                 '''
             }
         }
